@@ -1,0 +1,57 @@
+{
+  "name": "image-points-bot",
+  "version": "1.0.0",
+  "description": "Whop bot that tracks image messages and grants free time at 50 points",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "node dev-start.js",
+    "dev:direct": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint \"src/**/*.ts\" --max-warnings=0",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "whop",
+    "bot",
+    "image",
+    "points",
+    "gamification"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@whop/api": "^0.0.45",
+    "canvas": "^3.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "form-data": "^4.0.4",
+    "ioredis": "^5.8.1",
+    "mongoose": "^8.19.1",
+    "pino": "^10.0.0",
+    "pino-http": "^11.0.0",
+    "pino-pretty": "^13.1.2",
+    "sharp": "^0.34.4",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.7.2",
+    "@types/pino-http": "^5.8.4",
+    "concurrently": "^9.0.1",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "workspaces": [
+    "frontend"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
